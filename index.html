@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد رياض - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- الهيدر والواجهة الرئيسية -->
+    <header class="hero">
+        <div class="container">
+            <h1>أهلاً، أنا <span class="highlight">محمد رياض خليل </span></h1>
+            <p>طالب سوفت وير (Software Engineering) - السنة الثانية 🚀</p>
+            <a href="#assignments" class="btn">اذهب إلى قسم Assignments 📁</a>
+        </div>
+    </header>
+
+    <!-- نبذة عني -->
+    <section class="about container">
+        <h2>عني</h2>
+        <p>أنا طالب في سنة تانية تخصص هندسة البرمجيات، مهتم بتطوير مهاراتي في البرمجة وبناء مشاريع وتطبيقات حقيقية.</p>
+    </section>
+
+    <!-- قسم الأسساينمنتس (الأهم) -->
+    <section id="assignments" class="assignments-section container">
+        <h2>📚 قسم الواجبات والأسساينمنتس (Assignments)</h2>
+        <p class="section-desc">هنا تقدر ترفع وتخزن كل أسساينمنت (صور، كود، PDFs) وتتحكم فيهم براحتك.</p>
+
+        <!-- نموذج رفع الأسساينمنت -->
+        <div class="upload-card">
+            <h3>رفع واجب جديد</h3>
+            <form id="assignmentForm">
+                <input type="text" id="subjectName" placeholder="اسم المادة (مثلاً: Data Structures)" required>
+                <input type="text" id="assignmentTitle" placeholder="عنوان الأسساينمنت (مثلاً: Lab 1)" required>
+                <textarea id="assignmentDesc" placeholder="وصف بسيط أو ملاحظات..."></textarea>
+                <input type="file" id="assignmentFile" required>
+                <button type="submit" class="btn-submit">حفظ ورفع الأسساينمنت 💾</button>
+            </form>
+        </div>
+
+        <!-- قائمة الأسساينمنتس المرفوعة -->
+        <div class="assignments-list">
+            <h3>الأسساينمنتس المحفوظة</h3>
+            <div id="containerList" class="grid-list">
+                <!-- هيتم إضافة الأسساينمنتس هنا تلقائياً -->
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>تم الإنشاء بكل حب لـ محمد رياض &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
